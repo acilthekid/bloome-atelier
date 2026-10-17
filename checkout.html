@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Bloomé</title>
+        <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+<body class="checkout-page">
+
+<header class="checkout-header">
+    <a href="index.html" class="logo">Bloomé</a>
+    <a href="index.html#products">← Continue Shopping</a>
+</header>
+
+<main class="checkout-main">
+    <p class="section-subtitle">A LITTLE BOX OF HAPPINESS</p>
+    <h1>Your Checkout</h1>
+    <p class="checkout-subtitle">
+        Review your flowers and complete your delivery details.
+    </p>
+
+    <div class="checkout-layout">
+
+        <section class="checkout-panel">
+            <h2>Your Flower Cart</h2>
+            <div id="cart-items"></div>
+        </section>
+
+        <section class="checkout-panel">
+            <h2>Delivery Details</h2>
+
+            <form id="checkout-form" class="checkout-form">
+                <label for="customer-name">Full Name</label>
+                <input id="customer-name" name="customerName"
+                       type="text" required placeholder="Your full name">
+
+                <label for="customer-phone">Phone Number</label>
+                <input id="customer-phone" name="phone"
+                       type="tel" required placeholder="08xxxxxxxxxx">
+
+                <label for="customer-address">Delivery Address</label>
+                <textarea id="customer-address" name="address"
+                          rows="3" required
+                          placeholder="Enter your delivery address"></textarea>
+
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment" required>
+                    <option value="">Choose payment method</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="E-Wallet">E-Wallet</option>
+                    <option value="COD">Cash on Delivery (COD)</option>
+                </select>
+
+                <label for="order-notes">Order Notes (Optional)</label>
+                <textarea id="order-notes" name="notes" rows="2"
+                          placeholder="Any special requests?"></textarea>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">Rp0</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>Confirmed by seller</span>
+                </div>
+
+                <div class="summary-row summary-total">
+                    <span>Total Flowers</span>
+                    <strong id="total">Rp0</strong>
+                </div>
+
+                <button type="submit" class="checkout-submit">
+                    Complete Your Order 
+                </button>
+
+                <p class="checkout-note">
+                    Thank you for letting our little blooms be part of your story. This is a demo checkout; no real payment will be made.
+                </p>
+
+                <p id="order-feedback" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

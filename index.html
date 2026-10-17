@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomé Flower Shop</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+     <script src="shop.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Bloomé</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">About</a>
+        <a href="#products">Flowers</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="checkout.html" class="cart-link">
+            Cart (<span id="cart-count">0</span>)
+        </a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <img src="hero-flower.jpeg" alt="Bloomé Flower Bouquet"
+         class="hero-background">
+    <div class="hero-content">
+        <p class="small-title">WELCOME TO BLOOMÉ</p>
+        <h1>Flowers Made With <span>Love</span></h1>
+        <p>
+            A little touch of beauty, a gentle bloom for every
+            feeling and a flower for every moment worth remembering.
+        </p>
+        <a href="#products" class="button">Shop Flowers</a>
+    </div>
+</section>
+
+<section id="features" class="section">
+    <p class="section-subtitle">WHY BLOOMÉ?</p>
+    <h2>Flowers For Every Moment</h2>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>Fresh Flowers</h3>
+            <p>Freshly picked blooms, chosen with care to bring
+               natural beauty and warmth to every moment.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Pretty Packaging</h3>
+            <p>Every bouquet is wrapped with a delicate touch,
+               made to feel as lovely as the flowers within.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Made With Love</h3>
+            <p>A thoughtful gift, carrying feelings that words
+               sometimes cannot express.</p>
+        </div>
+    </div>
+</section>
+
+<section id="products" class="products-section">
+    <div class="section">
+        <p class="section-subtitle">OUR COLLECTION</p>
+        <h2>Choose Your Flowers</h2>
+
+        <div class="products">
+
+            <div class="product-card">
+                <img src="rose bouquet.jpeg" alt="Rose Bouquet">
+                <h3>Rose Bouquet - A Whisper of Love</h3>
+                <p>A timeless bloom, carrying whispers of love and devotion.</p>
+                <span>Rp150.000</span>
+                <div class="product-actions">
+                    <button class="add-cart-btn"
+                        data-name="Rose Bouquet" data-price="150000"
+                        data-image="rose bouquet.jpeg">Add to Cart</button>
+                    <button class="buy-now-btn"
+                        data-name="Rose Bouquet" data-price="150000"
+                        data-image="rose bouquet.jpeg">Buy Now!</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="tulip bouquet.jpeg" alt="Tulip Bouquet">
+                <h3>Tulip Bouquet - A Gentle Bloom</h3>
+                <p>Soft and graceful blooms for the ones who brighten your days.</p>
+                <span>Rp175.000</span>
+                <div class="product-actions">
+                    <button class="add-cart-btn"
+                        data-name="Tulip Bouquet" data-price="175000"
+                        data-image="tulip bouquet.jpeg">Add to Cart</button>
+                    <button class="buy-now-btn"
+                        data-name="Tulip Bouquet" data-price="175000"
+                        data-image="tulip bouquet.jpeg">Buy Now!</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="lily bouquet.jpeg" alt="Lily Bouquet">
+                <h3>Lily Bouquet - A Touch of Grace</h3>
+                <p>Elegant petals, blooming with a gentle touch of serenity.</p>
+                <span>Rp135.000</span>
+                <div class="product-actions">
+                    <button class="add-cart-btn"
+                        data-name="Lily Bouquet" data-price="135000"
+                        data-image="lily bouquet.jpeg">Add to Cart</button>
+                    <button class="buy-now-btn"
+                        data-name="Lily Bouquet" data-price="135000"
+                        data-image="lily bouquet.jpeg">Buy Now!</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="cherry blossom bouquet.jpeg" alt="Cherry Blossom">
+                <h3>Cherry Blossom - A Fleeting Dream</h3>
+                <p>Delicate blooms that capture the beauty of a sweet moment.</p>
+                <span>Rp160.000</span>
+                <div class="product-actions">
+                    <button class="add-cart-btn"
+                        data-name="Cherry Blossom" data-price="160000"
+                        data-image="cherry blossom bouquet.jpeg">Add to Cart</button>
+                    <button class="buy-now-btn"
+                        data-name="Cherry Blossom" data-price="160000"
+                        data-image="cherry blossom bouquet.jpeg">Buy Now!</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="baby breath bouquet.jpeg" alt="Baby Breath">
+                <h3>Baby Breath - Little Cloud of Love</h3>
+                <p>Tiny blooms, carrying tenderness and warmth.</p>
+                <span>Rp145.000</span>
+                <div class="product-actions">
+                    <button class="add-cart-btn"
+                        data-name="Baby Breath Bouquet" data-price="145000"
+                        data-image="baby breath bouquet.jpeg">Add to Cart</button>
+                    <button class="buy-now-btn"
+                        data-name="Baby Breath Bouquet" data-price="145000"
+                        data-image="baby breath bouquet.jpeg">Buy Now!</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="jellycat bouquet.jpeg" alt="Jellycat Bouquet">
+                <h3>Jellycat Bouquet - A Cuddle in Bloom</h3>
+                <p>A cuddly companion, wrapped with flowers for sweet moments.</p>
+                <span>Rp350.000</span>
+                <div class="product-actions">
+                    <button class="add-cart-btn"
+                        data-name="Jellycat Bouquet" data-price="350000"
+                        data-image="jellycat bouquet.jpeg">Add to Cart</button>
+                    <button class="buy-now-btn"
+                        data-name="Jellycat Bouquet" data-price="350000"
+                        data-image="jellycat bouquet.jpeg">Buy Now!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <p class="section-subtitle">CUSTOMER LOVE</p>
+    <h2>What They Say</h2>
+
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>“the flowers are so PRETTY, and the packaging is super adorable too!”</p>
+            <h4>— reignove y.</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>“the bouquet is fresh and looks exactly like the photo on the website.”</p>
+            <h4>— bleenca y. glair</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>“perfect as a gift. the flowers are also fragrant and beautiful too :3”</p>
+            <h4>— youmee igrae y.</h4>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-content">
+        <p class="section-subtitle">LET'S TALK FLOWERS</p>
+        <h2>We'd Love to Hear From You</h2>
+        <p class="contact-intro">
+            Have a question or a special request?
+            Send us a message. We'd love to hear from you!
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Say Hello ♡</h3>
+                <p>Email: howdydo@bloomeflowers.com</p>
+                <h3>Our Hours</h3>
+                <p>Monday – Saturday<br>09.00 – 18.00 WIB</p>
+                <h3>Made with Love</h3>
+                <p>Every bouquet is prepared with care, especially for you.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <label for="contact-name">Your Name</label>
+                <input id="contact-name" name="name"
+                       type="text" placeholder="Enter your name" required>
+
+                <label for="contact-email">Email Address</label>
+                <input id="contact-email" name="email"
+                       type="email" placeholder="you@example.com" required>
+
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" name="message"
+                          rows="5" placeholder="Write your message..."
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="contact-feedback" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-logo">Bloomé</div>
+    <p>Little flowers, big feelings.</p>
+    <p class="copyright">© 2026 Bloomé Flower Shop</p>
+</footer>
+
+<script src="shop.js"></script>
+</body>
+</html>
